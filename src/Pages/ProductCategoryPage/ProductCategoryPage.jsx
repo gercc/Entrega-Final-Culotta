@@ -28,7 +28,7 @@ const ProductCategoryPage = () => {
       </h1>
       <div className='container d-flex justify-content-center align-items-center'>
         {productosCategory.map((producto) => (
-          <div key={producto.id}>
+          <div key={producto.id} className='col-md-6'>
             <ItemDetailContainer data={producto} />
           </div>
         ))}
